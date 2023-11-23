@@ -4,7 +4,12 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                echo 'Building...'
+                sh '''
+                docker --version
+                docker-compose --version
+                java --version
+                jenkins --version
+                '''
             }
         }
     }
