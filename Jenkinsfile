@@ -5,10 +5,9 @@ pipeline{
     stages{
         stage('Build TADS'){
             steps{
-                sh 
-                '
+                sh '''
                 docker --version
-                '
+                '''
             }
         }
     }
