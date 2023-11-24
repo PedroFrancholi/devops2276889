@@ -6,9 +6,9 @@ pipeline{
         stage('Build TADS'){
             steps{
                 sh 
-                '''
-                jenkins --version
-                '''
+                '
+                docker --version
+                '
             }
         }
     }
