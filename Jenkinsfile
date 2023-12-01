@@ -7,7 +7,7 @@ pipeline{
             steps{
                 sh '''
                 npm install -g
-                npm test
+                npm test t
                 '''
             }
         }
