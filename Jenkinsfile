@@ -5,8 +5,7 @@ pipeline{
     stages{
         stage('Preparing'){
             steps{
-                sh 'npm install -g n'
-                sh 'n latest'
+                sh 'npm install -g npm@10.2.4'
             }
         }
         stage('Build TADS'){
