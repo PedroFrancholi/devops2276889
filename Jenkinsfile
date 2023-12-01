@@ -6,8 +6,7 @@ pipeline{
         stage('Build TADS'){
             steps{
                 sh '''
-                docker --version
-                java --version
+                npm install -g
                 '''
             }
         }
