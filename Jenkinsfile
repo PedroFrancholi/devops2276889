@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage('Preparing'){
           steps{
-            dir('/Projects/NodeGoat')
+            dir('./Projects/NodeGoat')
                 sh 'npm install'
              //   // sh 'npm install -g cypress'
                 sh 'npm test'
