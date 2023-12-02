@@ -29,6 +29,3 @@ test/e2e/videos/
 
 # ignore Snyk Code scanner files
 .dccache
-
-# ignore Node_Modules
-# .node_modules
