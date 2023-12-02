@@ -5,24 +5,28 @@ pipeline{
     tools {nodejs 'node'}
 
     stages{
-        stage('Preparing'){
+        stage('Start NodeGoat'){
           steps{
                 sh 'npm install'
             }
         }
-        stage('Testing'){
+        stage('Test NPM'){
             steps{
                 sh 'npm test'
             }
         }
-        stage('Building'){
+        stage('Construindo Docker'){
             steps{
                 sh 'docker build -t tde .'
             }
         }
-        stage('Composer'){
+        stage('Testando Docker'){
             steps{
-                echo 'DEU CERTOOOOOOOOO, ALELUIAAAAAAAAAA!!!!!!!!!!'
+                sh 'npm test'
+            }
+        }
+        stage('Deploy'){
+            steps{
                 sh 'docker compose up'
             }
         }
