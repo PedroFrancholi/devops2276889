@@ -7,9 +7,11 @@ pipeline{
     stages{
         stage('Preparing'){
           steps{
-             //dir('wsl.localhost/Ubuntu/mnt/wslg/distro/root/Projects\NodeGoat')
                 sh 'npm install'
-             //   // sh 'npm install -g cypress'
+            }
+        }
+        stage('Testing'){
+            steps{
                 sh 'npm test'
             }
         }
