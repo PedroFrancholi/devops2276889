@@ -25,7 +25,7 @@ pipeline{
                 sh 'docker compose up'
             }
             steps{
-                echo 'DEU CERTOOOOOOOOO, ALELUIAAAAAAAAA!!!!!!!!!!'
+                echo 'DEU CERTOOOOOOOOO, ALELUIAAAAAAAAAA!!!!!!!!!!'
             }
         }
     }
