@@ -13,7 +13,7 @@ pipeline{
         stage('Preparing'){
           steps{
             // dir('/root/.jenkins/workspace/TDE')
-                sh 'sudo install npm'
+                sh 'sudo npm install'
              //   // sh 'npm install -g cypress'
                 // sh 'npm test'
             }
