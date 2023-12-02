@@ -6,7 +6,7 @@ pipeline{
         stage('Preparing'){
           steps{
                 sh 'npm install -g'
-                // sh 'npm install -g cypress'
+             //   // sh 'npm install -g cypress'
                 sh 'npm test'
             }
         }
