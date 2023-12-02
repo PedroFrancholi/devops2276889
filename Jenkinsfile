@@ -20,5 +20,13 @@ pipeline{
                 sh 'docker build -t tde .'
             }
         }
+        stage('Composer'){
+            steps{
+                sh 'docker compose up'
+            }
+            steps{
+                echo 'DEU CERTOOOOOOOOO, ALELUIAAAAAAAAA!!!!!!!!!!'
+            }
+        }
     }
 }
