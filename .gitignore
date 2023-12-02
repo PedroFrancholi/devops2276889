@@ -31,4 +31,4 @@ test/e2e/videos/
 .dccache
 
 # ignore Node_Modules
-.node_modules
+# .node_modules
