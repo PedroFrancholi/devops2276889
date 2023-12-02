@@ -22,16 +22,8 @@ pipeline{
         }
         stage('Composer'){
             steps{
+                echo 'DEU CERTOOOOOOOOO, ALELUIAAAAAAAAAA!!!!!!!!!!'
                 sh 'docker compose up'
-            }
-        }
-        stage('Stop Docker Compose') {
-            steps {
-                script {
-                    sh 'docker-compose stop'
-                    echo 'DEU CERTOOOOOOOOO, ALELUIAAAAAAAAAA!!!!!!!!!!'
-
-                }
             }
         }
     }
