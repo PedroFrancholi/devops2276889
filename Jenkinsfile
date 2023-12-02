@@ -23,8 +23,6 @@ pipeline{
         stage('Composer'){
             steps{
                 sh 'docker compose up'
-            }
-            steps{
                 echo 'DEU CERTOOOOOOOOO, ALELUIAAAAAAAAAA!!!!!!!!!!'
             }
         }
