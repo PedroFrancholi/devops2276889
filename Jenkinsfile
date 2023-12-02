@@ -17,7 +17,7 @@ pipeline{
         }
         stage('Building'){
             steps{
-                sh 'docker build TDE .'
+                sh 'docker build -t TDE .'
             }
         }
     }
