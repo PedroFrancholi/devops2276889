@@ -7,7 +7,7 @@ pipeline{
           steps{
                 sh 'npm install -g'
              //   // sh 'npm install -g cypress'
-                sh 'npm test'
+                sh 'npm test:ci'
             }
         }
     }
