@@ -15,5 +15,10 @@ pipeline{
                 sh 'npm test'
             }
         }
+        stage('Building'){
+            steps{
+                sh 'docker build'
+            }
+        }
     }
 }
