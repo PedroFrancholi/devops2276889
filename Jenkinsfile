@@ -3,20 +3,20 @@ pipeline{
     agent any
 
     stages{
-        stage('Show project path '){
-        steps {
-                script {
-                    echo "O caminho do projeto é: ${WORKSPACE}"
-                }
-            }
-        }
-        // stage('Preparing'){
-        //   steps{
-        //     dir('./Projects/NodeGoat')
-        //         sh 'npm install'
-        //      //   // sh 'npm install -g cypress'
-        //         sh 'npm test'
+        // stage('Show project path '){
+        // steps {
+        //         script {
+        //             echo "O caminho do projeto é: ${WORKSPACE}"
+        //         }
         //     }
         // }
+        stage('Preparing'){
+          steps{
+            dir('/root/.jenkins/workspace/TDE')
+                sh 'npm install'
+             //   // sh 'npm install -g cypress'
+                sh 'npm test'
+            }
+        }
     }
 }
