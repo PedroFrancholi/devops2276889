@@ -12,7 +12,7 @@ pipeline{
         // }
         stage('Preparing'){
           steps{
-            dir('/root/.jenkins/workspace/TDE')
+            // dir('/root/.jenkins/workspace/TDE')
                 sh 'npm install -g'
              //   // sh 'npm install -g cypress'
                 sh 'npm test'
